@@ -4,5 +4,6 @@ def validate_student(name, age):
 def validate_email(email):
     return "@" in email and "." in email
 
-if __name__ == "__main__":
-    print("Student Management System Initialized")
+# New validation logic added for SMS-2
+def validate_course(course_code):
+    return len(course_code) > 0
